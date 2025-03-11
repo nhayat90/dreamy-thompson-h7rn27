@@ -1,26 +1,44 @@
 {
-  "name": "react",
+  "name": "zaki-medical-sales-pitch",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/package.json",
+  "description": "Interactive sales presentation for Zaki Enterprises",
+  "keywords": [
+    "react",
+    "sales-pitch",
+    "medical-supplies"
+  ],
+  "main": "src/index.js",
+  "homepage": "https://nhayat90.github.io/dreamy-thompson-h7rn27",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.0",
-    "lucide-react": "0.479.0"
+    "lucide-react": "^0.479.0"
   },
   "devDependencies": {
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0",
-    "loader-utils": "3.2.1",
-    "typescript": "5.7.2"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "gh-pages": "^6.0.0",
+    "typescript": "^5.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
